@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dellas sign In Form</title>
+    <!--<link rel="stylesheet" href="../CSS/homepage.css" type="text/css">-->
+
+    <link rel="stylesheet" href="../javascript/document_query.js" >
+
+    <style>
+        body{margin:0; padding:0;}
+        
+    .wrapper{ max-width: 800px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows:500px;
+            grid-gap:0;
+            margin:50px auto;
+            border-radius:20px; 
+             }
+    .wrapper>*{border:2px solid silver;
+        }
+    .wrapper .myform{padding:10px 20px;  }
+
+        .wrapper .myimage{
+                    background-image:url(../images/photo-1506974593014-c9d55699e805.jfif);                 background-repeat: no-repeat;
+                    background-size:cover;
+                    height:auto;
+                    background-position:center; }
+     .wrapper .grid{background-color: rgb(226, 182, 124);}
+
+       .myform{ margin:0 auto; 
+            box-sizing: border-box; } 
+       h3       {text-align: center; 
+               /* border-bottom:2px solid #321414;*/
+               /* here, is a quick tip; i tried using border bottom property for my heading element but, the border line, kept on extending beyond the text. so, i replaced with Text Decoration propery instead.*/
+               text-decoration:underline;
+               text-decoration-thickness: 2px;
+                margin-bottom: 3em; 
+                text-transform: uppercase;}
+       label    {display: block;
+                margin-bottom:10px; 
+                font-weight: bold;}
+       input    {padding:10px 20px; 
+                border-radius:10px;
+               
+             } 
+       .imp input{ width: 100%; 
+                 border:none;
+                 background-color: rgb(226, 182, 124);
+                 box-shadow: -2px -2px 3px #e2d7d7, 2px 2px 4px #3d3b3b;
+                 outline: none;
+        }
+         .imp{margin-bottom:30px;}
+
+       form button{width:100%;
+              margin-top:3em;
+               padding:10px; color: honeydew; 
+               background:#321414; 
+               border:none;
+               border-radius: 5px; 
+               text-transform: uppercase;
+               transition:1s;
+               box-shadow: -2px -2px 3px rgb(243, 238, 238), 2px 2px 4px #363232; }
+       form button a{color:honeydew; 
+                text-decoration: none;}
+      form  button:hover{
+                     background: #53231f; 
+                    transform: translateY(-2px);}
+
+        
+        .check{     margin-top: -5px; 
+                    font-size: 90%;}
+
+
+        .check #terms{color:#a70101e7; 
+                     font-weight: bold;}
+        @media screen and (max-width:800px){
+            h3{ font-size: 95%; font-weight:normal;}
+            
+        }
+        
+    </style>  
+</head>
+<body>
+    
+        
+    
+    <div class="wrapper">
+        <div class="wrapperitem myimage">
+             
+        </div>
+       
+        <div class="wrapperitem grid">
+            <form method="post" class="myform">
+                <h3>Dellas Confectionery</h3>
+                
+                <div class="imp">
+                        <label for="mail">Email</label>
+                         <input type="email" id="mail" placeholder="vincentnam22@gmail.com">
+                </div>
+                <div class="imp">
+
+                    <label for="pass">password</label>
+
+                     <input type="password" id="pass" placeholder="At least 6 Characters">
+
+                </div>
+
+
+                
+                <div class="check">
+                    <input type="checkbox" required> <span class="intro">By creating an account, you agree to the </span>
+                    <span id="terms"> Terms and Conditions.</span>
+                </div>
+
+                <div>
+                    <button>
+                        <a href="netnaija.com">Complete</a>
+                    </button>
+                </div> 
+                
+                
+            </form> 
+        </div> 
+      
+
+    </div>
+        
+  
+<script src="../javascript/document_query.js">
+
+</script>
+</body>
+</html>
