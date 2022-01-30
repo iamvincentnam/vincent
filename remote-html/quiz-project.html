@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz project (multiple choice qst)</title>
+    <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../remote-js/quiz-project.js">
+    <link rel="stylesheet" href="quiz-project.css">
+    <style>
+    
+     
+    </style>
+</head>
+<body>
+
+
+
+   
+  
+
+
+
+    <div class="container-fluid">
+        <article class="row mx-lg-2"
+            style="margin-top: 20px;">
+           
+
+            
+            <div class="py-3 bg-light text-center">
+                <h2 class="text-primary display-3  my-4" id="quiz-heading">
+                    vincent Quiz
+                </h2>
+            </div>
+            <!-- this is where the result will be displayed after a submit button is clicked -->
+         <div class="result py-4 bg-warning text-center lead">
+            <p>
+                Your Score is<span class="score text-primary display-3 p-3">0</span>Correct.
+            </p>
+        </div>
+        <!-- <p class="lead py-4  text-center">
+            Your Score is  <span class="text-success display-4 p-3"> 0%</span> 
+        </p> -->
+
+        <div class="quiz py-4 bg-primary px-5">
+           <h2 class="display-4 my-5 text-white ">
+            On with the questions...
+           </h2> 
+            <!--the form starts here -->
+           <form class="quiz-form text-light">
+
+            <div class="my-5">
+                <p class="lead font-weight-normal">
+                    1.) who is your <span class="badge  "> favorite Artist</span>
+                    currently ? 
+                </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q1" value="A" >
+                    <label class="form-check-label">
+                       Brymo Olorofo 
+                    </label>
+                </div>
+
+                    <div class="form-check 
+                        my-2 text-white-50">
+                        <input type="radio" name="q1" value="B" >
+                        <label class="form-check-label">
+                        Burna-Boy 
+                        </label>
+                    </div>
+                    
+            </div>
+          <!--the first qustion ends here--> 
+
+           <!-- the second  question starts Here -->
+            <div class="my-5">
+                <p class="lead font-weight-normal">
+                    2.) according to a claim, who wrote the song <span class="badge  "> Aye</span> for davido?
+                </p>
+                    <div class="form-check my-2 
+                        text-white-50">
+                        <input type="radio" name="q2" value="A">
+                        <label class="form-check-label">
+                        Runtown 
+                        </label>
+                    </div>
+
+                    <div class="form-check 
+                        my-2 text-white-50">
+                        <input type="radio" name="q2" value="B">
+                        <label class="form-check-label">
+                        Tee Spice
+                        </label>
+                    </div>
+            </div>
+
+            <!--the Second  qustion ends here -->
+
+            <!-- the Third question starts Here --> 
+             <div class="my-5">
+                <p class="lead font-weight-normal">
+                    3.) Which of these is a popular Nigerian<span class="badge">Tech Influencer</span>on twitter ?
+                </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q3" value="A">
+                    <label class="form-check-label">
+                    Agba Akin 
+                    </label>
+                </div>
+
+                    <div class="form-check 
+                        my-2 text-white-50">
+                        <input type="radio" name="q3" value="B">
+                        <label class="form-check-label">Alex_Houseof308
+                        </label>
+                    </div>
+         
+             </div>
+                   <!-- the Third question Ends Here -->  
+
+                     <!-- the Fourth question starts Here -->
+
+             <div class="my-5">
+                    <p class="lead font-weight-normal">
+                        4.) The<span class="badge">most</span>streamed female artiste in Nigeria according to spotify is who? 
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="A">
+                        <label class="form-check-label">
+                        Tems 
+                        </label>
+                    </div>
+
+                        <div class="form-check 
+                            my-2 text-white-50">
+                            <input type="radio" name="q4" value="B">
+                            <label class="form-check-label">
+                                Yemi Alade
+                            </label>
+                        </div>
+
+             </div>
+                        <!-- the Fourt question Ends Here -->  
+
+                     <!-- the Fifth question starts Here -->
+
+                    <div class="my-5">
+                        <p class="lead font-weight-normal">
+                            5.) Arrange in an orderly manner <span class="badge bg-warning px-1 text-success">(i) HTML-CSS-Javascript</span>
+
+                            <span class="badge bg-warning px-1 text-success">(ii) Python-PHP-React</span>
+
+                            <span class="badge bg-warning px-1 text-success"> (iii) Bootstrap-Javascript-CSS</span>
+                           
+                           
+                            
+                            
+                        </p>
+                        <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q5" value="A">
+                            <label class="form-check-label">
+                               I
+                            </label>
+                        </div>
+        
+                            <div class="form-check 
+                                my-2 text-white-50">
+                                <input type="radio" name="q5" value="B">
+                                <label class="form-check-label">
+                                   II
+                                </label>
+                            </div>
+                    </div>
+                    
+                   <div class="text-center  my-4"> 
+                        <input type="submit" class="btn btn-light   border-0 px-3">
+                    
+                    </div>
+    
+           </form>
+
+        </div>
+        </article>
+    </div>
+    
+        
+            
+    
+    
+        
+       
+    
+        
+    
+    
+    
+    <!-- <script src="../Bootstrap/js/bootstrap.min.js">
+    
+    </script> -->
+     <script src="../javascript/document_query.js">
+    
+    </script>
+</body>
+</html>
+    
+        
+
+
+    
+   
+
+    
+
+
+
+ <!-- <script src="../Bootstrap/js/bootstrap.min.js">
+
+</script> -->
+ <script src="../remote-js/quiz-project.js">
+
+</script>
+</body>
+</html>

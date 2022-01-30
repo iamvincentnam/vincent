@@ -1,0 +1,7 @@
+
+     .row .bad{border:2px solid gold;background: gray;}
+     .btn   {font-weight: bold;
+            text-transform: uppercase;transition:0.5s linear; }
+    .btn:hover  {background:rgb(62, 180, 57) !important; font-weight: bold; color:rgb(228, 219, 219)}
+        
+   
