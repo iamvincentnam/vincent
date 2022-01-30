@@ -1,0 +1,122 @@
+ /* CSS properties of the Parent container. */
+      /* */
+      article{  background-color: rgb(224, 221, 221);
+        max-width:400px;
+        margin:100px auto;
+        padding:20px 3em;
+        box-shadow: 3px -3px 4px  #6d6a6aab, -3px 3px  4px rgb(255, 255, 255);}
+
+    /* CSS properties of the second Parent */
+.todo_wrapper{background-image: url('../remote-asset/images/19_christmas_Mesa_de_trabajo_1.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position:center;
+        overflow: hidden;
+        
+            position: relative;
+            width: 320px;
+            background-color: #e0e0e0e0;
+             margin:20px auto;
+            padding-bottom: 10px;
+            border-radius: 25px;
+            box-shadow: -3px 3px 6px  #6d6a6aab, 3px -3px  6px rgb(255, 255, 255);
+          } 
+
+
+    /* CSS Properties of A the Form Element  */
+#todo_form     {   display: flex; 
+              margin-left: 15px;
+              justify-content:space-between;
+              align-items: center; } 
+
+
+input:focus    { border-color:#c3883d; }
+#todo_form input{  width: 65%;
+                margin-bottom: 10px;
+                margin-top: 15px;
+                border-radius: 25px ; 
+                padding: 7px 10px; 
+                background-color:#e0e0e0e0; 
+                outline:#c3883d;
+                border-top: none;
+                border-left: none;
+                font-size: 80%; 
+                text-align:center;
+                box-shadow: #6d6a6ada 3px -3px 4px , -3px 3px  4px  rgb(255, 255, 255);
+                text-transform:capitalize;}
+              
+
+          /* CSS properties of the the Button Element  */                          
+        button{
+             border-radius: 20px;
+              background-color: rgb(18, 53, 207);
+              border: none;
+              cursor: pointer;
+              color: #ffff; 
+              outline:none ;
+              padding: 3px 12px; 
+              margin-right: 20px;
+              box-shadow: 2px -2px 3px  #575454da, -2px 2px  3px rgb(255, 255, 255); 
+              font-size: 13px; }
+      /* CSS Properties of the unorederd list or list Div  */
+.listdiv{ 
+        margin:10px 0 1px 0; 
+         padding:5px 10px ;
+         border-radius: 20px;
+        border-right: none;
+         box-shadow: 3px -3px 4px  #6d6a6ada,
+          -3px 3px  3px rgb(233, 226, 226);
+        min-height: 150px;
+         
+      } 
+
+
+  /* CSS properties for the list Items  are ritten bellow */
+
+.listdiv li { 
+        max-width:100% ;
+        display: flex;
+        justify-content:space-between;
+         align-items: center; 
+        border-radius: 25px;
+         padding:6px 15px;
+        background-color: #e0e0e0e0; 
+        margin: 14px auto;
+        list-style: none; 
+         font-size: small;
+        font-family: 'Courier New'; 
+        font-weight: bold;
+        border-bottom:1px solid;
+        border-left:1px solid;
+        color:rgba(0, 0, 0, 0.534);
+        box-shadow:  3px -3px 4px  rgb(255, 255, 255),
+         -3px 3px  4px #6d6a6ada;
+        
+                                     }
+
+    /* animation rules  css property are set here */
+
+    @keyframes drive{
+        from{transform: translateX(-100%); }
+        to{transform: translateX(5px);}
+      
+        }
+       
+    .listdiv li:last-of-type{ 
+      position: relative;
+      animation: drive  1s linear ;}
+         
+      /* The trash can css property begins here */
+    li .trash{
+            border-radius: 50%;
+            padding:2px 4px;
+            background-color: #fffdfd;
+            border:1px solid;
+           cursor: pointer;}
+ 
+li .trash img{ color: #ffff;
+           margin-top:2px;}
+
+    
+
+     

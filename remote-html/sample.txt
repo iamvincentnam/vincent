@@ -51,3 +51,4 @@ console.log( 'unknown Weather type');
    default :
         alert('today will be a blessing');
     
+https://github.com/iamvincentnam/vincent.git
