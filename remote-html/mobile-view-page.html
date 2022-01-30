@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Document</title>
+    <style>
+        body{ background-color: #1C1C26;}
+        #wrapper{max-width: 350px;
+                height:auto;
+                background-color: #252531;
+                
+                border-radius: 10px;
+                margin: 20px auto;
+                color:white; 
+            }
+
+
+        .heading{ padding: 10px 2.1em; 
+                border-bottom: 1px solid rgba(105, 102, 102, 0.671); 
+                max-width: 100%;
+                margin: 0 auto;
+                
+            }
+        h1{        color:white; 
+                   line-height: 40px;
+                   font-size: 240%;
+                   font-family: 'Roboto', sans-serif;;}
+        .heading span{background-color: rgb(170, 88, 236)}
+
+
+          .heading p, .secondheading p{font-size: 70%; 
+                        line-height: 130%;
+                        text-align: left; 
+                        color: rgb(172, 169, 169);
+                        font-family: 'Dongle', sans-serif;
+                        
+                    }
+
+            .secondheading { padding-bottom:2em ; 
+                        padding-top: 0;} 
+            .animation{ max-width: 100%;
+                         background-color: white;
+                         height: 120px;
+                         padding: 10px 30px; 
+                        display: flex; 
+                        justify-content: space-between; 
+                        align-items: center;
+                       
+                }
+
+      
+            .animation .thirdimg{ transform: rotateZ(90deg);}
+
+
+            .pricing ul {line-height: 100%; 
+                        padding:0; 
+                        list-style-type: none;
+                   
+           }
+            .pricing li{margin-bottom: 1em;
+                    color: rgb(172, 169, 169);  
+                    font-size: 75%;
+                    display: flex;
+                    justify-content:start;
+                    align-items: center;
+                }
+
+                .pricing li img{margin-right: 5px;}
+
+
+            h5{text-transform:uppercase; 
+                font-size:xx-small;
+                font-family: 'Dongle', sans-serif;
+                letter-spacing: 1px;}
+            input{background-color:#1C1C26;
+                 padding:5px 10px;
+                  width: 90%;
+                  border: none;
+                  border-radius: 3px;
+                }
+                ::placeholder{font-size: 80%;}
+
+         .button-div{display: grid;
+                     align-self: center;
+                    
+                    }
+        .button-div button{padding: 10px 0;
+                         background-color: rgb(170, 88, 236);
+                        border: none;
+                    border-radius: 5px;
+                    color: white;
+                    text-transform: uppercase; 
+                    font-size: 50%;
+                     font-weight:400;
+                    letter-spacing: 1px;}
+        .mailchimp p {font-size:8px;
+                    font-weight: bold;
+                    margin-top: 20px;}
+        .socials{padding-bottom: 20px;}
+        .socials img{ margin-right: 5px;}
+
+        .links  {list-style-type: none; 
+                margin-left: 0; 
+                padding:0; }
+                
+        .links  li {text-align: left;
+                    display: inline-block;}
+        .links a {  color: rgb(172, 169, 169);
+                   
+                    text-transform: capitalize;
+                    font-size: small;
+                    margin-right: 5px;}
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+       
+        <div class="heading">
+            <h1 class="">Earnings Call  <span>highlights </span>   deliverd to  your inbox.</h1>
+
+        </div>
+        
+        <div class="secondheading heading">
+            <h5>How It works?</h5>
+            <p> Our ai-powered tool reduces earnings cal transcripts from companies you follow by 70-90%. It keeps all the important parts, divides them into chuncks for easy consumption, and delivers to your inbox.</p>
+        </div>
+
+        <div class="animation">
+
+            <div>
+                <img src="../remote-asset/icons/icons8-align-text-left-48.png" height="100px" width="60px">
+            </div>
+           
+            <div class="secndimg">
+                <img src="../remote-asset/icons/icons8-right-arrow-30 copy.png"  height="20px">
+            </div>
+            <div class="thirdimg">
+                <img src="../remote-asset/icons/icons18-align-text-left-50.png" width="40px" height="80px"  >
+
+                <img src="../remote-asset/icons/icons18-align-text-left-50.png " height="80px" width="40px">
+            </div>
+        </div>
+
+        <div class=" heading pricing">
+            <h5> Pricing</h5>
+            <ul>
+                <li> <img src="../remote-asset/icons/icons8-check-circle-24.png" alt="" height=12px">  Free for up to 40 earnings calls a year.</li>
+                <li> <img src="../remote-asset/icons/icons8-check-circle-24.png" alt="" height=12px">    $120/year for unlimited earnings calls. </li>
+                <li> <img src="../remote-asset/icons/icons8-check-circle-24.png" alt="" height=12px">  $300/year for access to the historical data. </li>
+            </ul>
+
+        </div>
+
+        <div class=" heading" >
+            <h5>Join Waitlist</h5>
+
+            <p>We'll be roling out invite soon. <br>  Be the first to know when we launch.</p>
+            <p class="input">  
+             <input type="text" placeholder="Email Address">
+               
+            </p>
+
+            <div class="button-div">
+                <button> Join waitlist</button>
+            </div>
+
+            <div  class="mailchimp">
+                <p>We use mailchimp to collect emails. No Spam. Unsubscribe anytime.</p>
+           
+            </div>
+           
+        </div>
+          
+        <div class=" heading" >
+            <h5>Reach out</h5>
+
+           <div class="socials">
+            <img src="../remote-asset/icons/icons8-facebook-24.png" alt="">
+               <img src="../remote-asset/icons/icons8-twitter-24 (1).png" width="26px" alt="">
+               <img src="../remote-asset/icons/icons8-email-23.png" alt="">
+               <img src="" alt="">
+               
+           </div>
+           
+        </div>
+
+        <div class=" heading" >
+
+           <h5> disclaimer </h5>
+
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse velit eius error ullam maxime aspernatur quidem voluptatibus nisi corporis consectetur. Tempora aspernatur dicta magni architecto. Vero itaque iusto quibusdam blanditiis minus? </p>
+
+            <div >
+                <ul class="links">
+                    <li>
+                        <a href="#"> terms </a>
+                    </li>
+                    <li>
+                        <a href="#"> privacy </a>
+                    </li>
+                    <li>
+                        <a href="#"> disclaimerv</a>
+                    </li>
+                    <li>
+                        <a href="#"> contact Us </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+       
+          
+        
+
+    </div>
+</body>
+</html>

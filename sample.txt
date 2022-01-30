@@ -1,0 +1,53 @@
+when writing a program on switch Case;
+1,  declare the variable or constant first
+const weather ='cloudy';
+
+2)make sure you use the same case or capslock in both your var
+ declaration and your case( ) value. thus, if your var declaration begins with a capital letter, so should the case value; 
+
+3)
+remember to add a 'default'  case at the very  end of  your case options. should in case your previous case values does not satisfy the conditions in your console.log, then the default should be a fall-back value.
+  
+here is syntax:
+switch (prompt('what is the weather like ?')){
+case 'rainy': 
+console.log( 'You may want to bring an Umbrella with you');
+break;
+
+case 'sunny':
+console.log( 'You may want to bring water & goggle');
+break;
+
+case 'shower':
+console.log( 'You may bring a sweater');
+break;
+
+default:
+console.log( 'unknown Weather type');
+
+}
+
+ const form = document.querySelector('form');
+
+ form.addEventListener('submit', (e)=>{
+    e.preventDefault();
+     const input = form.weather.value.trim()toLowerCase()
+    weatherfunc (input)
+   form.reset()
+ });
+
+ function weatherfunc (input){
+    var weather = input;
+ switch(weather){
+     case'cloudy':
+     alert('wear light cloths, you may stay at home or you may go out');
+     break;
+     case'sunny':
+     alert('carry sunglasses and a bottle of water');
+   break;
+     case'rainy':
+     alert('carry umbrella, rain-boots');
+    break;  
+   default :
+        alert('today will be a blessing');
+    
