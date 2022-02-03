@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../javascript/oop.js">
+    <title>Youtube website clone</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Roboto:ital,wght@0,400;1,300;1,500&display=swap');
+/* the section bellow, contains styles for the layout of a youtube clone */
+        *{margin : 0; padding: 0;
+            box-sizing: border-box;
+            }
+        body{font-family: 'Roboto';}
+        header{display: flex; justify-content: space-between;
+                align-items: center;
+            background-color: darkorchid;
+            height: 60px;
+            padding: 15px;}
+        main{height:calc(100vh);
+             display: flex;
+             background: #f9f9f9;}
+
+        aside{height:100%; width:17%;
+            background: rgb(214, 211, 211);
+            overflow-y: hidden;}
+        @media screen and (max-width:768px) {
+           aside{display:none;} 
+        }
+ .sidebar-menu{ padding:0.5em 1em; 
+                margin-bottom: 1em;
+                box-sizing: border-box;
+                width:100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom:10px;
+            margin-top: 10px;
+            cursor: pointer;
+            
+       }
+    .nav-link{display: flex;
+            align-items: center;
+            padding:10px 20px;}
+ .sidebar-menu:hover{background-color:silver ;}
+  
+.sidebar-menu img{margin-right: 20px;}
+.sidebar-menu a{ text-decoration: none; color: rgb(39, 37, 37);
+                }
+
+                /* this section refers to styles for calculator  */
+hr{height: 1px; background-color: #e5e5e5;}
+
+article{background-color: #1c2b38;
+       }
+    
+.container{background-color: #1c2b38;
+        width: 380px;
+        margin:10px 100px;
+        padding:20px 0;
+        border-radius: 25px;
+        height:auto;
+        box-shadow: -2px 2px 4px #807c7cda,  2px -2px  4px #151e27;
+        transform: scale(0.8);
+        }
+    .calculator-wrapper{width: 100%;
+                       
+                        height: 100%;
+                         margin:0 auto;
+                     padding: 20px ;}
+ .form-item{ position: relative;
+            color: white;
+            background-color: #1c2b38;
+            width: 100%;
+            margin-bottom: 1em;
+            border-radius: 5px;
+            height:3em;
+            border-bottom: 2px solid #58595a7e;        
+            margin-top:-10px ;
+            box-sizing: border-box;
+            padding: 10px 20px;
+            display: grid;
+            align-items: center;
+           border-radius: 20px 20px 0 0;
+            font-size: 2em;}
+
+    .form-item span{display: flex;
+                    overflow-x: auto;
+                   
+                }
+    .form-item span::-webkit-scrollbar{width:auto;
+        }
+    .form-item div{position: absolute;
+                    right:7%;
+                    bottom: 10%;
+                    font-size: 60%;
+                    color:rgba(255, 255, 255, 0.404);
+                  
+                    } 
+  
+    
+.wrapper{background-color: #1c2b38;
+        width: 100%;
+        color: rgb(207, 202, 202);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 60px;
+        grid-gap: 20px;
+        padding:10px 20px;
+        border-radius: 20px;
+        
+        }
+        
+       
+.wrapper .item{
+            background-image:linear-gradient(to bottom, #1c2b38,#35414d ) ;
+            box-shadow: 2px -2px 4px #6d6a6ada, -2px 2px  4px #06080a; 
+            font-size: 2.5em;
+            text-align: center;
+            display: grid;
+            align-items: center;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    .item:hover{ color:rgba(207, 202, 202, 0.849);
+        background-image:linear-gradient(to bottom, #35414d, #1c2b38) ;}
+    .item8      { grid-row: 2/ span 4; grid-column: 4;}
+ #arraydiv{ width: 300px;
+            height:auto;
+            background-color: rgb(241, 127, 20);
+            font-size: 14px;
+            line-height: 150%;
+            color: palegoldenrod;
+            text-align: center;}
+    </style>
+</head>
+<body>
+<header>
+  <div class="logo">
+
+  </div>
+</header>
+<main>
+    <aside>
+
+            <div class="sidebar-menu">
+                <a href="#" class="nav-link active">
+                    <img src="../images/svg icons/icons8-home-24.png" alt="">
+                    <span class="anchorname">Home</span>  
+                  </a>
+                
+             </div>
+<hr>
+             <div class="sidebar-menu">
+                <a href="#" class="nav-link active">
+                    <img src="../images/svg icons/icons8-compass-24.png">
+                    <span class="anchorname">Explore</span>
+                </a>
+             </div>
+
+                <div class="sidebar-menu">
+                <a href="#" class="nav-link active">
+                    <img src="../images/svg icons/icons8-play-24.png" alt="">
+                    <span class="anchorname">Subscriptions</span>  
+                  </a>
+
+                 </div>
+
+                  
+                <div class="sidebar-menu">
+                    <a href="#" class="nav-link active">
+                        <img src="../images/svg icons/icons8-music-time-24.png" alt="">
+                        <span class="anchorname">History</span>  
+                      </a>
+                </div>
+                  
+
+        
+
+
+                <div class="sidebar-menu">
+              <a href="#" class="nav-link active">
+                  <img src="../images/svg icons/icons8-circled-play-24.png" alt="">
+                  <span class="anchorname">Library</span>  
+                </a>
+                </div>
+                
+        
+            
+            <div class="sidebar-menu">
+                <a href="#" class="nav-link active">
+                    <img src="../images/svg icons/icons8-like-24.png" alt="">
+                    <span class="anchorname">Liked Videos</span>  
+                  </a>
+            </div> 
+    </aside>
+
+    <!-- the article is a whole wrapper element that contains the background which the calculator app sits in -->
+    <article>
+       <div id="arraydiv">
+
+       </div>
+       <!-- here, is the calculator app -->
+        <div class="container">
+            <!-- Here contains another div inside the calculator-->
+            <div class="form-item">
+                  <span>0</span> 
+                  <div>
+                      
+                       <p>
+                       Ans  
+                       </p>
+                       
+                  </div>
+            </div>
+
+            <!-- the wrapper contains individual divs which are input buttons of the calculator-->
+                <div class="wrapper">
+                
+                    <div class="item item1"> <p>+</p>  </div>
+                    <div class="item item2"> <p>-</p> </div>
+                    <div class="item item3"> <p> *</p> </div>
+                    <div class="item item4"> <p>&#247</p></div>
+                    <div class="item item5"> 7 </div>
+                    <div class="item item6"> 8 </div>
+                    <div class="item item7"> 9 </div>
+                    <div class="item item8">  =</div>
+                    <div class="item item9"> 4 </div>
+                    <div class="item item10"> 5</div>
+                    <div class="item item11">6 </div>
+                    <div class="item item12"> 1</div>
+                    <div class="item item13">2 </div>
+                    <div class="item item14">3</div>
+                    <div class="item item15">0 </div>
+                    <div class="item item17"> .</div>
+                    <div class="item item18">AC </div>
+                   
+                   
+                   
+                </div>
+            
+           
+    
+        </div>
+       
+    </article>
+</main>
+    
+    <script src="../javascript/oop.js"> 
+
+    </script>
+</body>
+</html>
