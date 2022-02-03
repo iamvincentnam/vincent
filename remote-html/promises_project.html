@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A project on promises</title>
+
+    <style>
+        body{text-transform: capitalize; 
+            background: rgba(232, 232, 238, 0.9);}
+       
+       table{  border:2px solid;
+            background-color: rgb(197, 136, 74);
+			border-collapse:collapse;}
+       tr{border:1px groove rgb(19, 70, 63); 
+		padding:2px 10px;color:black; text-align: center; }
+        tr:only-child(even){background-color: rgb(45, 214, 214) !important;}
+        th{color: rgb(58, 55, 55);}
+
+     
+    </style>
+</head>
+<body>
+    
+        <div class="container-fluid">
+            <div class="row">
+                <article class="paragraph col-lg-4">
+                    <table border="2px">
+                        <tr>
+                            <th>
+                         User Id
+                            </th>
+    
+                            <th>
+                           Title
+                            </th>
+                            <th>
+                               body
+                            </th>   
+                         </tr>
+                         
+                    </table>
+                </article>
+              
+            </div>
+           
+        </div>
+       
+        
+ <script>
+     
+function getJsonData(resource){
+  return new Promise ((resolve, reject)=>{
+      const request = new XMLHttpRequest();
+        request.addEventListener('readystatechange', ()=>{
+     
+          if(request.readyState === 4 && request.status === 200){
+            const jsonData = JSON.parse(request.responseText);
+           resolve ( jsonData);
+          } 
+          else if(request.readyState === 4) {
+           reject('could not get data from the server!!');
+          }
+    });
+    
+    request.open('GET',resource );
+    request.send();
+    
+  });
+ 
+
+}
+
+var article = document.querySelector('article');
+var table = document.querySelector('table');
+getJsonData('https://jsonplaceholder.typicode.com/posts')
+.then((data)=>{
+  
+  console.log('this is promise 1',data)
+  return getJsonData('')
+  })
+.then((data)=>{
+  data.forEach((each)=>{
+    table.innerHTML +=`
+    <tr>
+      <td>
+        ${each.state}
+      </td>   
+      <td>
+        ${each.Governor}
+      </td>
+     
+    </tr>
+    `
+  })
+
+})
+.catch((error)=>{
+ console.log('error:', error)
+});
+
+ </script>
+</body>
+</html>
+
